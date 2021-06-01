@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(248, 181, 157);
+    text-align: center;
+
+    header{
+        background-color: darkred;
+        color: white;
+    }
+
+    footer{
+        background-color: rgb(34, 30, 31);
+        color: white;
+    }
+}
