@@ -11,6 +11,6 @@ $factory->define(MyMatch::class, function (Faker $faker) {
         'team2' => $faker ->  word,  
         'point1' => rand(0, 30),
         'point2' => rand(0, 30),
-        'result' =>  rand(0, 1) == 0
+        'result' => rand(0, 1) == 0
     ];
 });

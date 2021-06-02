@@ -7,6 +7,7 @@
 body {
   background-color: #f8b59d;
   text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 body header {
@@ -29,6 +30,22 @@ body li a {
 
 body li a:hover {
   background-color: red;
+}
+
+body .btn_create {
+  margin: 10px;
+}
+
+body .btn_create .btn_create_primary {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+body .btn_create .btn_create_primary:hover {
+  background-color: blue;
 }
 
 body footer {

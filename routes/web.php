@@ -17,4 +17,6 @@ Route::get('/home', 'TestController@home') -> name('home'); /*entro nella pagina
 
 Route::get('/match/{id}', 'TestController@show') -> name('show'); /*entro nella pagina dedicata alla singola partita */
 
-Route::get('/create', 'TestController@create') -> name('create');)
+Route::get('/create', 'TestController@create') -> name('create'); /*entro nella pagina dedicata alla creazione di un nuovo Match partita */
+
+Route::post('/store', 'TestController@store') -> name('store'); /*creiamo la rotta per il trasferimento del form */

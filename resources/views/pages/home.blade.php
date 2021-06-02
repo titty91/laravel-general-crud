@@ -15,6 +15,11 @@
         </ul>
 
     </div>
+    <div class="btn_create">
+        <a class="btn_create_primary" href="{{route('create')}}">
+            Create New Match
+        </a>
 
+    </div>
 
 @endsection

@@ -13,7 +13,7 @@ class MyMatch extends Model
         'team2',
         'point1',
         'point2',
-        'result',
+        'result'
     ];
     
 }

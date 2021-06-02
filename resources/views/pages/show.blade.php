@@ -4,16 +4,12 @@
     <div class="contain">
         <h1>Match:</h1> 
 
-        <h2>
-
-            @if ($match -> result)
+        <h2>        
                 
-               {{$match -> team1}} - <u> {{$match -> team2}}</u>
+            {{$match -> team1}} -  {{$match -> team2}}
 
-            @else
-            <u> {{$match -> team1}} </u> -  {{$match -> team2}}
-
-            @endif
+            
+             {{$match -> team1}}  -  {{$match -> team2}}
 
             
         </h2>
@@ -22,9 +18,6 @@
             {{$match -> point1}} - {{$match -> point2}}
         </p>
 
-        <p>
-            Result: {{$match -> result}}
-        </p>
     </div>
 
 
