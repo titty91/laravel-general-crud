@@ -13,4 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', 'TestController@home') -> name('home');
+Route::get('/home', 'TestController@home') -> name('home'); /*entro nella pagina principale */
+
+Route::get('/match/{id}', 'TestController@show') -> name('show'); /*entro nella pagina dedicata alla singola partita */
+
+Route::get('/create', 'TestController@create') -> name('create');)

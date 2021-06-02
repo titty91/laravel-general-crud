@@ -11,7 +11,24 @@ body {
 
 body header {
   background-color: darkred;
+}
+
+body header a {
+  text-decoration: none;
   color: white;
+}
+
+body li {
+  list-style-type: none;
+}
+
+body li a {
+  text-decoration: none;
+  color: black;
+}
+
+body li a:hover {
+  background-color: red;
 }
 
 body footer {

@@ -8,10 +8,32 @@ body{
     background-color: rgb(248, 181, 157);
     text-align: center;
 
+
     header{
         background-color: darkred;
-        color: white;
+        
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
+
+    
+    li{
+        list-style-type: none;
+
+        a{
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                background-color: red;
+            }
+        }
+        }
+
+
 
     footer{
         background-color: rgb(34, 30, 31);
