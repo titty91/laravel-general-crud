@@ -1,8 +1,18 @@
 @extends('layouts.main-layout')
 @section('contain')
 
-    <div class="contain">
+    <div class="contain box">
         <h1>New Match:</h1> 
+
+                @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
     
         <form action="{{route('update', $match -> id)}}" method="post">
 
@@ -27,7 +37,7 @@
             </div>
             <div>
                 <label for="point2">Point2</label>
-                <input id='point1' type="number" name='point1' value='{{ $match -> point1}}' placeholder="new point2">
+                <input id='point2' type="number" name='point2' value='{{ $match -> point2}}' placeholder="new point2">
             </div>
             
             <div>

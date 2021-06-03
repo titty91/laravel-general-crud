@@ -59,7 +59,7 @@ class TestController extends Controller
 
        $match = MyMatch::create($validated);
 
-       return redirect()-> route('show', $match -> $id);
+       return redirect()-> route('show', $match -> id);
     }
 
 
@@ -79,14 +79,14 @@ class TestController extends Controller
 
         $match -> update($validated);
 
-        return redirect() -> route('show', $match -> $id );
+        return redirect() -> route('show', $match -> id );
     }
 
     public function delite($id){
 
         $match = MyMatch::findOrFail($id);
 
-        $match -> delite();
+        $match -> delete();
 
         return redirect() -> route('home');
         

@@ -5,13 +5,42 @@
 }
 
 body {
-  background-color: #f8b59d;
+  background-color: #ddcbc8;
   text-align: center;
   font-family: "Barlow Condensed", sans-serif;
 }
 
 body header {
-  background-color: darkred;
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  width: 100%;
+}
+
+body header .menu-nav {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+body header .menu-nav .first_nav {
+  color: chocolate;
+  border-bottom: 2px solid chocolate;
+}
+
+body header .menu-nav li {
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+body header .menu-nav li:hover {
+  color: chocolate;
 }
 
 body header a {
@@ -29,27 +58,47 @@ body li a {
 }
 
 body li a:hover {
-  background-color: red;
+  color: chocolate;
+}
+
+body .box {
+  padding-top: 80px;
+}
+
+body .box .elenco_match {
+  margin: 10px 0px;
+  font-size: 20px;
+}
+
+body .box .btn {
+  color: chocolate;
+  text-decoration: none;
+}
+
+body .contain {
+  height: calc(100vh - 40px);
 }
 
 body .btn_create {
-  margin: 10px;
+  margin: 20px 0px 40px 0;
 }
 
 body .btn_create .btn_create_primary {
   text-decoration: none;
   color: white;
-  background-color: red;
+  background-color: black;
+  font-weight: bold;
   border-radius: 10px;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 body .btn_create .btn_create_primary:hover {
-  background-color: blue;
+  background-color: chocolate;
 }
 
 body footer {
   background-color: #221e1f;
   color: white;
+  padding: 10px;
 }
 

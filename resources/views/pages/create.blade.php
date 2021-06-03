@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
 @section('contain')
 
-    <div class="contain">
+    <div class="contain box">
         <h1>New Match:</h1> 
     
         <form action="{{route('store')}}" method="post">

@@ -1,10 +1,10 @@
 @extends('layouts.main-layout')
 @section('contain')
 
-    <div>
+    <div class="box">
         <h1>Matches:</h1> 
 
-        <ul>
+        <ul class="elenco_match">
             @foreach ($matches  as $match)
                 <li>
                     <a href="{{route('show', $match -> id)}}"> 
@@ -16,7 +16,7 @@
                     </a>
                     <a href="{{route('delite', $match -> id)}}">                    	
                     &#128500;
-                </a>
+                    </a>
                 </li>
             @endforeach
         </ul>

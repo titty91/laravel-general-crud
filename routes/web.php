@@ -21,7 +21,7 @@ Route::get('/create', 'TestController@create') -> name('create'); /*entro nella 
 
 Route::post('/store', 'TestController@store') -> name('store'); /*creiamo la rotta per il trasferimento del form */
 
-Route::get('/edit', 'TestController@edit') -> name('edit'); 
+Route::get('/edit/{id}', 'TestController@edit') -> name('edit'); 
 
 Route::post('/update/{id}', 'TestController@update') -> name('update'); /*creiamo la rotta per il mofificare il match */
 

@@ -1,12 +1,15 @@
 @extends('layouts.main-layout')
 @section('contain')
 
-    <div class="contain">
+    <div class="contain box">
         <h1>
             Match:
-            <a href="{{route('edit', $match -> id)}}">                    	
+            <a class="btn" href="{{route('edit', $match -> id)}}">                    	
                 &#128398;
-                </a>
+            </a>
+            <a  class="btn" href="{{route('delite', $match -> id)}}">                    	
+                &#128500;
+            </a>
         
         </h1> 
 

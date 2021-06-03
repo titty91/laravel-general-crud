@@ -1,3 +1,3 @@
 <footer>
-    <p>boo</p>
+    <p>by Tiziana</p>
 </footer>
