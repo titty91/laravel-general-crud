@@ -10,6 +10,13 @@
                     <a href="{{route('show', $match -> id)}}"> 
                         {{$match -> team1}} - {{$match -> team2}}
                     </a>
+                    <a href="{{route('edit', $match -> id)}}">                    	
+                    &#9997;
+                    </a>
+                    </a>
+                    <a href="{{route('delite', $match -> id)}}">                    	
+                    &#128500;
+                </a>
                 </li>
             @endforeach
         </ul>

@@ -2,15 +2,24 @@
 @section('contain')
 
     <div class="contain">
-        <h1>Match:</h1> 
+        <h1>
+            Match:
+            <a href="{{route('edit', $match -> id)}}">                    	
+                &#128398;
+                </a>
+        
+        </h1> 
 
         <h2>        
-                
-            {{$match -> team1}} -  {{$match -> team2}}
+            @if ($match -> result)
 
-            
-             {{$match -> team1}}  -  {{$match -> team2}}
+            {{$match -> team1}} -  <u>{{$match -> team2}}</u>
+             
+            @else
 
+            <u>{{$match -> team1}}</u>  -  {{$match -> team2}}
+
+            @endif
             
         </h2>
 
